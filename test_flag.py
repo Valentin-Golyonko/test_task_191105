@@ -87,6 +87,32 @@ def test_jp_flag():
     #                              #
     ################################
     <BLANKLINE>
+
+    >>> print(flag('3'))
+    Traceback (most recent call last):
+        ...
+    argparse.ArgumentError: The input N shall be an integer even number!
+
+    >>> print(flag('w'))
+    Traceback (most recent call last):
+        ...
+    argparse.ArgumentError: The input N shall be an integer even number!
+
+    >>> print(flag(None))
+    Traceback (most recent call last):
+        ...
+    argparse.ArgumentError: The input N shall be an integer even number!
+
+    >>> print(flag(' '))
+    Traceback (most recent call last):
+        ...
+    argparse.ArgumentError: The input N shall be an integer even number!
+
+    >>> print(flag(-1))
+    Traceback (most recent call last):
+        ...
+    argparse.ArgumentError: The input N shall be an integer even number!
+
     """
 
 
