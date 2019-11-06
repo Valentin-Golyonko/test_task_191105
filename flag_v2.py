@@ -2,7 +2,7 @@ import numpy as np
 
 
 def inner_circle(r: int):
-    d = 2 * r + 1
+    d = 2 * r + 3
     rx, ry = d / 2, d / 2
     x, y = np.indices((d, d))
 
@@ -16,7 +16,8 @@ def inner_circle(r: int):
         print(str_0)
 
     # print((arr_0 < 0.5).astype(int))
-    arr = (arr_0 < 0.64).astype(int)
+    arr = (arr_0 < 0.52).astype(int)
+    # N(d, 0.x): 2(+2, 0.5), 3(+2,0.54), 4(+1, 0.54), 5(+2, 0.5), 6(+1, 0.52), 8+ = 0.64
 
     arr_2 = ''
     start_inner_circle = False
@@ -54,9 +55,6 @@ def borders(n: int):
 
 
 if __name__ == "__main__":
-    N = 12
+    N = 6
     inner_circle(N)
     borders(N)
-
-    s = '   **'
-    print(s[-3:])
