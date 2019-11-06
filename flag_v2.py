@@ -2,24 +2,24 @@ import numpy as np
 
 
 def inner_circle(r: int):
-    d = 2 * r + 3
+    d = {2: (2, 0.5), 3: (2, 0.54), 4: (1, 0.54), 5: (2, 0.5), 6: (1, 0.52), 8: (1, 0.64)}  # N(d, 0.x)
+
+    d = 2 * r + 1
     rx, ry = d / 2, d / 2
-    x, y = np.indices((d, d))
+    x, y = np.indices((d + 1, d + 1))
 
     arr_0 = np.abs(np.hypot(rx - x, ry - y) - r)
-    print('x =', len(arr_0[0]), ', y =', len(arr_0))
+    # print('x =', len(arr_0[0]), ', y =', len(arr_0))
 
-    for row in arr_0:
-        str_0 = ''
-        for i in row:
-            str_0 += '%0.3f ' % i
-        print(str_0)
+    # for row in arr_0:
+    #     str_0 = ''
+    #     for i in row:
+    #         str_0 += '%0.3f ' % i
+    #     print(str_0)
 
     # print((arr_0 < 0.5).astype(int))
-    arr = (arr_0 < 0.52).astype(int)
-    # N(d, 0.x): 2(+2, 0.5), 3(+2,0.54), 4(+1, 0.54), 5(+2, 0.5), 6(+1, 0.52), 8+ = 0.64
+    arr = (arr_0 < 0.54).astype(int)
 
-    arr_2 = ''
     start_inner_circle = False
     for row in arr:
         arr_2 = ''
@@ -33,6 +33,8 @@ def inner_circle(r: int):
             else:
                 if start_inner_circle:
                     arr_2 += 'o'
+                elif arr_2[:r + 2] == ' ' * r + '**':
+                    arr_2 += ' '
                 elif arr_2[-3:] == ' **' or arr_2[-1:] == 'o' or arr_2[:2] == '**':
                     arr_2 += 'o'
                 else:
@@ -55,6 +57,7 @@ def borders(n: int):
 
 
 if __name__ == "__main__":
-    N = 6
-    inner_circle(N)
-    borders(N)
+    for i in range(2, 13):
+        print("i: %s" % i)
+        inner_circle(i)
+    # borders(N)
