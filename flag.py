@@ -1,5 +1,12 @@
 from argparse import ArgumentError
 
+""" Tech specialist answer:
+1) Лишний уровень абстракции.
+2) Плохие имена переменных.
+3) Не удалённые комментарии.
+4) Большой уровень вложенности циклов и условий.
+"""
+
 
 def create_flag(n: int) -> str:
     out_str = ''

@@ -1,7 +1,7 @@
 from flag_v2 import inner_circle
 
 
-def test_flag():
+def test_flag_v2():
     """
     >>> inner_circle('2')
     ############
