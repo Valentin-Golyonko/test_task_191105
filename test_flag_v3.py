@@ -103,12 +103,27 @@ def test_jp_flag():
         ...
     argparse.ArgumentError: The input Number must be positive integer even number!
 
-    >>> Flag3(' ').print_flag()
+    >>> Flag3('').print_flag()
     Traceback (most recent call last):
         ...
     argparse.ArgumentError: The input Number must be positive integer even number!
 
     >>> Flag3(-1).print_flag()
+    Traceback (most recent call last):
+        ...
+    argparse.ArgumentError: The input Number must be positive integer even number!
+
+    >>> Flag3([]).print_flag()
+    Traceback (most recent call last):
+        ...
+    argparse.ArgumentError: The input Number must be positive integer even number!
+
+    >>> Flag3([0]).print_flag()
+    Traceback (most recent call last):
+        ...
+    argparse.ArgumentError: The input Number must be positive integer even number!
+
+    >>> Flag3(2.0).print_flag()
     Traceback (most recent call last):
         ...
     argparse.ArgumentError: The input Number must be positive integer even number!

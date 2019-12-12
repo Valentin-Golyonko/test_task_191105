@@ -18,7 +18,7 @@ class Flag3:
         self.outer_radius_correction_coefficient = 0.18
 
     def even_number(self, number) -> int:
-        if number and type(number) != str and number > 0 and not number % 2:
+        if number and type(number) == int and number > 0 and not number % 2:
             return number
         else:
             raise ArgumentError(None, "The input Number must be positive integer even number!")
