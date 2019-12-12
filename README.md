@@ -1,7 +1,5 @@
 # Japanese flag
 
-<a href="https://github.com/Valentin-Golyonko/test_task_191105#japanese-flag">Task README</a>
-
 # v3 (latest)
 Simple circle formula and 3 'if' to determine circle borders (with outer circle radius correction coefficient).
 - <code>python3 flag_v3.py</code>
@@ -22,8 +20,9 @@ The fist idea was - it's a rhomb! Algorithm implements 4 border-circle lines.
 - <code>python3 test_flag.py -v</code>
 
 
-<details><summary>Task (CLICK ME)</summary>
+<details><summary><b>Task (CLICK ME)</b></summary>
 <p>
+    
 The purpose of the task is to implement a function that will accept a single input parameter N and output a string with an ASCII art of the japanese flag.
 
 Here is an example of flags for various values of N:
