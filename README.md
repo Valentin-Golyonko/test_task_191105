@@ -22,11 +22,8 @@ The fist idea was - it's a rhomb! Algorithm implements 4 border-circle lines.
 - <code>python3 test_flag.py -v</code>
 
 
-<details><summary>CLICK ME</summary>
+<details><summary>Task (CLICK ME)</summary>
 <p>
-
-<a href="https://github.com/Valentin-Golyonko/test_task_191105#japanese-flag">Japanese flag</a>
-
 The purpose of the task is to implement a function that will accept a single input parameter N and output a string with an ASCII art of the japanese flag.
 
 Here is an example of flags for various values of N:
@@ -66,6 +63,5 @@ The following is a list of requirements for the function:
 - The function shall accept a single parameter N
 - If the parameter is not a valid even integer number the `ArgumentError` exception shall be thrown
 - The result of the task shall be provided a single python file named `flag.py` with a function named `flag` defined in it
-
 </p>
 </details>
