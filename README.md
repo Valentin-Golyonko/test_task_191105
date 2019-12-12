@@ -7,8 +7,6 @@ Simple circle formula and 3 'if' to determine circle borders (with outer circle 
 - <code>python3 flag_v3.py</code>
 - <code>python3 test_flag_v3.py -v</code>
 
-What that? :
-
 # v2
 Uses NumPy and <a href="https://stackoverflow.com/questions/39073973/how-to-generate-a-matrix-with-circle-of-ones-in-numpy-scipy/39074620">How to generate a matrix with circle of ones in numpy/scipy</a>
 - <code>python3 flag_v2.py</code>
@@ -27,7 +25,7 @@ The fist idea was - it's a rhomb! Algorithm implements 4 border-circle lines.
 <details><summary>CLICK ME</summary>
 <p>
 
-<a href="#japanese-flag">Japanese flag</a>
+<a href="https://github.com/Valentin-Golyonko/test_task_191105#japanese-flag">Japanese flag</a>
 
 The purpose of the task is to implement a function that will accept a single input parameter N and output a string with an ASCII art of the japanese flag.
 
