@@ -17,7 +17,7 @@ class Flag3:
         self.flag_height = 2 * self._number + 2
         self.outer_radius_correction_coefficient = 0.18
 
-    def even_number(self, number):
+    def even_number(self, number) -> int:
         if number and type(number) != str and number > 0 and not number % 2:
             return number
         else:
@@ -55,7 +55,7 @@ class Flag3:
 
         return output_str
 
-    def print_flag(self):
+    def print_flag(self) -> None:
         print(self.create_flag())
 
 

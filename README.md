@@ -1,7 +1,7 @@
 # Japanese flag
 
 # v3 (latest)
-Simple circle formula and 3 'if' to determine circle borders (with outer circle radius correction coefficient).
+OOP and simple circle formula with 3 'if' to determine circle borders (with outer circle radius correction coefficient).
 - <code>python3 flag_v3.py</code>
 - <code>python3 test_flag_v3.py -v</code>
 
